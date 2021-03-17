@@ -1,16 +1,14 @@
-*** IMPORTANT NOTICE ***  
-THIS IMAGE HAS BEEN DEPRECATED  
-We are no longer able to ingest tarballs from upstream repo  
+# docker-tt-rss
 
+This repository contains the source code for building a [Tiny Tiny RSS](https://tt-rss.org) container and is based on the original source hosted at https://github.com/linuxserver/docker-tt-rss, which is now unmaintained.
 
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)](https://linuxserver.io)
-
-[![Blog](https://img.shields.io/static/v1.svg?style=flat-square&color=E68523&label=linuxserver.io&message=Blog)](https://blog.linuxserver.io "all the things you can do with our containers including How-To guides, opinions and much more!")
-[![Discord](https://img.shields.io/discord/354974912613449730.svg?style=flat-square&color=E68523&label=Discord&logo=discord&logoColor=FFFFFF)](https://discord.gg/YWrKVTn "realtime support / chat with the community and the team.")
-[![Discourse](https://img.shields.io/discourse/https/discourse.linuxserver.io/topics.svg?style=flat-square&color=E68523&logo=discourse&logoColor=FFFFFF)](https://discourse.linuxserver.io "post on our community forum.")
-[![Fleet](https://img.shields.io/static/v1.svg?style=flat-square&color=E68523&label=linuxserver.io&message=Fleet)](https://fleet.linuxserver.io "an online web interface which displays all of our maintained images.")
-[![GitHub](https://img.shields.io/static/v1.svg?style=flat-square&color=E68523&label=linuxserver.io&message=GitHub&logo=github&logoColor=FFFFFF)](https://github.com/linuxserver "view the source for all of our repositories.")
-[![Open Collective](https://img.shields.io/opencollective/all/linuxserver.svg?style=flat-square&color=E68523&label=Supporters&logo=open%20collective&logoColor=FFFFFF)](https://opencollective.com/linuxserver "please consider helping us by either donating or contributing to our budget")
+[![Blog](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Blog)](https://blog.linuxserver.io "all the things you can do with our containers including How-To guides, opinions and much more!")
+[![Discord](https://img.shields.io/discord/354974912613449730.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Discord&logo=discord)](https://discord.gg/YWrKVTn "realtime support / chat with the community and the team.")
+[![Discourse](https://img.shields.io/discourse/https/discourse.linuxserver.io/topics.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=discourse)](https://discourse.linuxserver.io "post on our community forum.")
+[![Fleet](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Fleet)](https://fleet.linuxserver.io "an online web interface which displays all of our maintained images.")
+[![GitHub](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub&logo=github)](https://github.com/linuxserver "view the source for all of our repositories.")
+[![Open Collective](https://img.shields.io/opencollective/all/linuxserver.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Supporters&logo=open%20collective)](https://opencollective.com/linuxserver "please consider helping us by either donating or contributing to our budget")
 
 The [LinuxServer.io](https://linuxserver.io) team brings you another container release featuring :-
 
@@ -38,7 +36,6 @@ Find us at:
 [![MicroBadger Layers](https://img.shields.io/microbadger/layers/linuxserver/tt-rss.svg?style=flat-square&color=E68523)](https://microbadger.com/images/linuxserver/tt-rss "Get your own version badge on microbadger.com")
 [![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/tt-rss.svg?style=flat-square&color=E68523&label=pulls&logo=docker&logoColor=FFFFFF)](https://hub.docker.com/r/linuxserver/tt-rss)
 [![Docker Stars](https://img.shields.io/docker/stars/linuxserver/tt-rss.svg?style=flat-square&color=E68523&label=stars&logo=docker&logoColor=FFFFFF)](https://hub.docker.com/r/linuxserver/tt-rss)
-[![Build Status](https://ci.linuxserver.io/view/all/job/Docker-Pipeline-Builders/job/docker-tt-rss/job/master/badge/icon?style=flat-square)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-tt-rss/job/master/)
 [![](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/tt-rss/latest/badge.svg)](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/tt-rss/latest/index.html)
 
 [Tt-rss](https://tt-rss.org) is an open source web-based news feed (RSS/Atom) reader and aggregator, designed to allow you to read news from any location, while feeling as close to a real desktop application as possible.
@@ -123,7 +120,7 @@ Container images are configured using parameters passed at runtime (such as thos
 
 ## Environment variables from files (Docker secrets)
 
-You can set any environment variable from a file by using a special prepend `FILE__`. 
+You can set any environment variable from a file by using a special prepend `FILE__`.
 
 As an example:
 
@@ -164,7 +161,7 @@ The container can configure itself using environment variables, the guard for th
 * -e DB_PORT=3306
 * -e SELF_URL_PATH=http://localhost/
 
-Please note if you use this method you need to have an already initialized database endpoint. We do our best to ensure that anything in the config.php can be set via these environment variables. 
+Please note if you use this method you need to have an already initialized database endpoint. We do our best to ensure that anything in the config.php can be set via these environment variables.
 
 
 
